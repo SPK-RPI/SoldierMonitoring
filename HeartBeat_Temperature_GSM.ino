@@ -86,7 +86,7 @@ void sendDataToProcessing(char symbol, int data)
   if (symbol == 'B')
   {
     Serial.println(data);
-    mySerial.println("AT+HTTPPARA=\"URL\",\"http://api.thingspeak.com/update?key=TYNCY7N8NUYJHNF4&field1=" + celsius + "&field2=" + data + "\"");
+    mySerial.println("AT+HTTPPARA=\"URL\",\"http://api.thingspeak.com/update?key=&field1=" + celsius + "&field2=" + data + "\"");
   }
   //  Serial.print(symbol);                // symbol prefix tells Processing what type of data is coming
   // Serial.println(data);
